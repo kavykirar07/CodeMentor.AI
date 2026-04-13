@@ -1,0 +1,15 @@
+{
+  "name": "codementor-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CodeMentor AI — A Socratic coding tutor for CS students",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
