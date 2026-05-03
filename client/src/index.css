@@ -279,12 +279,39 @@ body {
   padding: 20px;
 }
 
+/* Mobile toggle bar — hidden on desktop */
+.view-toggle {
+  display: none;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-bg-secondary);
+}
+
 @media (max-width: 1024px) {
   .workspace-grid {
     grid-template-columns: 1fr;
     height: auto;
+    padding: 12px;
+    gap: 0;
+  }
+
+  .view-toggle {
+    display: flex;
+  }
+
+  /* On mobile only show the active panel */
+  .workspace-panel.panel-hidden {
+    display: none !important;
+  }
+
+  .workspace-panel.panel-active {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    min-height: calc(100vh - 160px);
   }
 }
+
 
 /* ─── Page Transitions ─── */
 .page-enter {

@@ -1,0 +1,17 @@
+# Server Environment Variables
+PORT=3001
+# Using local in-memory MongoDB for development
+# To use Atlas: replace with mongodb+srv://kavykirar:YOUR_PASSWORD@codementor.0fcejzt.mongodb.net/codementor?retryWrites=true&w=majority&appName=codementor
+MONGODB_URI=mongodb://127.0.0.1:27017/codementor
+REDIS_URL=redis://localhost:6379
+JWT_SECRET=codementor_jwt_super_secret_32chars_ok
+GOOGLE_AI_API_KEY=AIzaSyCdi9DIw2MMZMMQ0FuyzLYDrNpvIiAXex4
+ANTHROPIC_API_KEY=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
+
+# Judge0 Execution Sandbox (optional — leave blank to use mock sandbox)
+# Sign up at https://rapidapi.com/judge0-official/api/judge0-ce
+JUDGE0_URL=
+JUDGE0_API_KEY=
+
+CLIENT_URL=http://localhost:5173
+NODE_ENV=development

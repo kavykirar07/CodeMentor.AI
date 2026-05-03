@@ -102,8 +102,8 @@ export default function Analytics() {
                       outerRadius={90}
                       innerRadius={50}
                       paddingAngle={4}
-                      label={({ language, percent }) =>
-                        `${language} ${(percent * 100).toFixed(0)}%`
+                      label={({ language, percent }: any) =>
+                        `${language} ${((percent ?? 0) * 100).toFixed(0)}%`
                       }
                     >
                       {(summary.languageBreakdown || []).map((_: any, i: number) => (
